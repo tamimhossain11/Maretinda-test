@@ -1,9 +1,6 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
-import { RadioGroup } from '@headlessui/react';
-import { Radio } from '@medusajs/ui';
-import Image from 'next/image';
 
 interface GiyaPayGatewayDirectProps {
   paymentSession?: any;
