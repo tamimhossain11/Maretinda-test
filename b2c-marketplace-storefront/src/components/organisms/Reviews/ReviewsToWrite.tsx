@@ -24,7 +24,7 @@ export const ReviewsToWrite = ({ orders }: { orders: Array<Order> }) => {
 	const handleShowForm = (order: Order) => {
 		// Get the first product from the order items
 		const firstProductId = order.items?.[0]?.product_id;
-		setShowForm({ order, productId: firstProductId });
+		setShowForm({ order, productId: firstProductId || undefined });
 	};
 
 	return (
