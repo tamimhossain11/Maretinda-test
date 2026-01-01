@@ -55,7 +55,7 @@ const GiyaPayButton = ({
 			}
 
 			const sessionData = activeSession.data;
-			const formData = sessionData?.form_data || sessionData;
+			const formData = (sessionData?.form_data || sessionData) as any;
 
 			// Get selected payment method from localStorage (set by GiyaPayGatewayDirect)
 			const selectedMethod = typeof window !== 'undefined' 
