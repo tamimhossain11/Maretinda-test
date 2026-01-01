@@ -1,9 +1,27 @@
 'use client';
 
-import { Upload, X } from '@medusajs/icons';
+import { X } from '@medusajs/icons';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
+
+// Upload icon component
+const Upload = ({ className }: { className?: string }) => (
+	<svg
+		className={className}
+		fill="none"
+		stroke="currentColor"
+		strokeWidth={2}
+		viewBox="0 0 24 24"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		/>
+	</svg>
+);
 
 import { Button } from '@/components/atoms';
 import { getImageConfig } from '@/lib/config/image-config';
