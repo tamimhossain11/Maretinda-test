@@ -1,6 +1,5 @@
 'use client';
 
-import { X } from '@medusajs/icons';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
@@ -20,6 +19,23 @@ const Upload = ({ className }: { className?: string }) => (
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		/>
+	</svg>
+);
+
+// X/Close icon component
+const XIcon = ({ size = 24 }: { size?: number }) => (
+	<svg
+		fill="none"
+		height={size}
+		stroke="currentColor"
+		strokeLinecap="round"
+		strokeLinejoin="round"
+		strokeWidth={2}
+		viewBox="0 0 24 24"
+		width={size}
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path d="M18 6L6 18M6 6l12 12" />
 	</svg>
 );
 
@@ -291,7 +307,7 @@ export const ImageUploader = ({
 									onClick={() => handleRemove(index)}
 									type="button"
 								>
-									<X size={16} />
+									<XIcon size={16} />
 								</button>
 							)}
 						</div>
