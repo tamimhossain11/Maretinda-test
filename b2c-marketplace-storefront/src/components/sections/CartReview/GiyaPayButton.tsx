@@ -67,7 +67,7 @@ const GiyaPayButton = ({
 			}
 
 			// Get checkout URL from session data
-			const checkoutUrl: string = sessionData?.checkout_url || 
+			const checkoutUrl: string = (sessionData?.checkout_url as string) || 
 				(sessionData?.sandbox_mode ? 'https://sandbox.giyapay.com/checkout' : 'https://pay.giyapay.com/checkout');
 
 			// Create the form for GiyaPay checkout
