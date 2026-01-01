@@ -1,0 +1,54 @@
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+	images: {
+		remotePatterns: [
+			{
+				hostname: 'medusa-public-images.s3.eu-west-1.amazonaws.com',
+				protocol: 'https',
+			},
+			{
+				hostname: 'mercur-connect.s3.eu-central-1.amazonaws.com',
+				protocol: 'https',
+			},
+			{
+				hostname: 'api.mercurjs.com',
+				protocol: 'https',
+			},
+			{
+				hostname: 'localhost',
+				protocol: 'http',
+			},
+			{
+				hostname: 'api-sandbox.mercurjs.com',
+				pathname: '/static/**',
+				protocol: 'https',
+			},
+			{
+				hostname: 'i.imgur.com',
+				protocol: 'https',
+			},
+			{
+				hostname: 's3.eu-central-1.amazonaws.com',
+				protocol: 'https',
+			},
+		{
+			hostname: 's3.ap-southeast-1.amazonaws.com',
+			protocol: 'https',
+		},
+		{
+			hostname: 'storage.googleapis.com',
+			protocol: 'https',
+		},
+	],
+},
+	logging: {
+		fetches: {
+			fullUrl: true,
+		},
+	},
+	reactStrictMode: true,
+	trailingSlash: false,
+};
+
+module.exports = nextConfig;

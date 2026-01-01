@@ -1,0 +1,30 @@
+import { Button } from '@/components/atoms/Button/Button';
+import LocalizedClientLink from '@/components/molecules/LocalizedLink/LocalizedLink';
+import { Layout } from '@/components/organisms';
+
+export default async function RequestSuccessPage({
+	params,
+}: {
+	params: Promise<{ id: string }>;
+}) {
+	const { id } = await params;
+
+	return (
+		<Layout>
+			<div className="md:col-span-3 text-center user-content-wrapper">
+				<h1 className="heading-md uppercase">Return requested</h1>
+				<p className="label-md text-secondary w-96 mx-auto my-8">
+					Your return request has been submitted. Once the seller
+					confirms it, you will receive a confirmation email.
+				</p>
+				<LocalizedClientLink
+					href={`/user/returns${id && `?return=${id}`}`}
+				>
+					<Button className="label-md uppercase px-12 py-3">
+						Return details
+					</Button>
+				</LocalizedClientLink>
+			</div>
+		</Layout>
+	);
+}

@@ -1,0 +1,96 @@
+export const singleProduct = {
+	brand: 'Nike',
+	color: 'Yellow',
+	colorVariants: [
+		{
+			disabled: false,
+			label: 'Yellow',
+			variant: '#FCC501',
+		},
+		{ disabled: false, label: 'Black', variant: '#090909' },
+		{ disabled: false, label: 'Gray', variant: '#F7F7F7' },
+	],
+	condition: 'New with box',
+	details:
+		"<p>Nike elevates the iconic Air Force 1 silhouette with the Off-White University Gold edition. These sneakers blend high-fashion aesthetics with streetwear appeal, showcasing Virgil Abloh's signature deconstructed design and bold yellow accents. The intricately crafted details and Off-White branding make them a standout piece in any collection.</p><ul class='mt-4'><li>Upper: leather</li><li>Lining: fabric</li><li>Sole: rubber</li><li>Toe shape: round toe</li><li>Made in: Vietnam</li><li>Includes: shoe box, extra laces</li><li>Designer color name: University Gold</li><li>Closure: lace-up</li><li>Item number: AF1OWUG</li></ul>",
+	id: '1',
+	images: [
+		{
+			alt: 'Nike Air Force 1 Low Off-White University Gold - Main View',
+			id: '1',
+			url: '/images/product/Image-1.jpg',
+		},
+		{
+			alt: 'Nike Air Force 1 Low Off-White University Gold - Side View',
+			id: '2',
+			url: '/images/product/Image-2.jpg',
+		},
+		{
+			alt: 'Nike Air Force 1 Low Off-White University Gold - Back View',
+			id: '3',
+			url: '/images/product/Image-3.jpg',
+		},
+		{
+			alt: 'Nike Air Force 1 Low Off-White University Gold - Back View',
+			id: '4',
+			url: '/images/product/Image-3.jpg',
+		},
+		{
+			alt: 'Nike Air Force 1 Low Off-White University Gold - Back View',
+			id: '5',
+			url: '/images/product/Image-3.jpg',
+		},
+	],
+	measurements: [{ cm: '5.1', inches: '2', label: 'Heel Height' }],
+	name: 'AIR FORCE 1 LOW OFF-WHITE UNIVERSITY GOLD',
+	originalPrice: 4000,
+	postedDate: '7 days ago',
+	price: 3599,
+	reviews: [
+		{
+			date: '3 days ago',
+			id: '1',
+			image: '/images/product/review-image-1.jpg',
+			rating: 5,
+			text: 'Amazing experience buying from Jason! The customer service was top-notch, and my Jordans arrived quickly. The shoes were exactly as described. Will definitely shop here again!',
+			username: 'sarahmitchell',
+		},
+		{
+			date: '3 weeks ago',
+			id: '2',
+			image: '/images/product/review-image-2.jpg',
+			rating: 5,
+			text: 'Jason provided fantastic service. My order arrived in perfect condition and right on time. The site is easy to navigate, and checkout was a breeze. Highly recommend this seller!',
+			username: 'jamesrodriguez',
+		},
+		{
+			date: '1 year ago',
+			id: '3',
+			image: '/images/product/review-image-3.jpg',
+			rating: 5,
+			text: "I'm very impressed with Jason. My order was processed swiftly, and the sneakers arrived earlier than expected. Excellent communication and quality products. I'll be a returning customer for sure!",
+			username: 'rmilydavis',
+		},
+	],
+	seller: {
+		avatar: '/images/product/seller-avatar.jpg',
+		description:
+			'Designer collection garms from Japan<br />Buy with confidence & Pay as you wish/the most offer & Bundle deals, make reasonable offers & No refund',
+		id: 'jason',
+		joinDate: '2017',
+		name: 'Jason',
+		page: '/sellers/jason',
+		rating: 4,
+		reviewCount: 234,
+		sold: 126,
+		verified: true,
+	},
+	size: 'UK 3.5',
+	sizeVariants: [
+		{ disabled: false, label: 'UK 3' },
+		{ disabled: false, label: 'UK 3.5' },
+		{ disabled: false, label: 'UK 4' },
+		{ disabled: true, label: 'UK 4.5' },
+	],
+	tags: ['Sneakers', 'Nike', 'Track'],
+};

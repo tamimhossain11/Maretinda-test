@@ -1,0 +1,278 @@
+/* Defined colors variables */
+@import "colors.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+.text-xl {
+	@apply font-semibold tracking-normal;
+}
+.text-lg {
+	@apply text-base font-semibold tracking-normal;
+}
+.text-md {
+	@apply text-[14px] leading-[22px] font-semibold tracking-normal;
+}
+.text-sm {
+	@apply text-[12px] font-medium tracking-normal;
+}
+
+.text-caption {
+	@apply text-[12px] font-medium tracking-normal;
+}
+
+.label-sm {
+	@apply text-[12px] leading-[20px] font-semibold tracking-normal;
+}
+.label-md {
+	@apply text-[14px] leading-[22px] font-semibold tracking-normal;
+}
+.label-lg {
+	@apply text-[16px] leading-[24px] font-bold tracking-normal;
+}
+.label-xl {
+	@apply text-[20px] leading-[28px] font-bold tracking-normal;
+}
+
+.heading-xs {
+	@apply text-[14px] leading-[22px] font-bold tracking-normal;
+}
+.heading-sm {
+	@apply text-[16px] leading-[24px] font-bold tracking-normal;
+}
+.heading-md {
+	@apply text-[24px] leading-[32px] font-bold tracking-normal max-md:text-[20px] max-md:leading-[28px];
+}
+.heading-lg {
+	@apply text-[32px] leading-[40px] font-bold tracking-normal max-md:text-[24px] max-md:leading-[32px];
+}
+.heading-xl {
+	@apply text-[40px] leading-[48px] font-bold tracking-normal max-md:text-[32px] max-md:leading-[40px];
+}
+.heading-2xl {
+	@apply text-[40px] leading-[48px] font-bold tracking-normal max-md:text-[44px] max-md:leading-[52px];
+}
+
+.display-sm {
+	@apply text-[56px] leading-[64px] font-bold tracking-normal max-md:text-[32px] max-md:leading-[40px];
+}
+.display-md {
+	@apply text-[64px] leading-[72px] font-bold tracking-normal max-md:text-[40px] max-md:leading-[48px];
+}
+.container {
+	@apply px-4 md:px-5 max-w-full w-full lg:py-8 py-4 lg:px-4;
+}
+
+.category-navbar {
+	@apply label-lg font-bold text-primary px-4 my-3 md:my-0 md:pb-4 md:pt-6 flex items-center justify-between md:border-b-[3px] md:border-tertiary;
+}
+
+/* Checkout specific styles */
+.checkout-section-title {
+	@apply text-2xl font-bold mb-4;
+	color: #111827;
+}
+
+.checkout-label {
+	@apply text-sm font-semibold mb-2;
+	color: #374151;
+}
+
+.checkout-text {
+	@apply text-base font-medium;
+	color: #111827;
+}
+
+.checkout-summary-text {
+	@apply text-sm font-semibold;
+	color: #374151;
+}
+
+.payment-method-title {
+	@apply text-base font-semibold;
+	color: #111827;
+}
+
+/* Checkout section wrapper improvements */
+.user-content-wrapper {
+	@apply shadow-sm border border-gray-200 rounded-lg p-6 sm:p-7 lg:p-8;
+	background: white;
+}
+
+/* Atoms components */
+
+.button-icon {
+	@apply bg-primary hover:bg-action-secondary-hover active:bg-action-secondary-pressed disabled:bg-primary;
+}
+.button-icon svg path {
+	@apply fill-secondary;
+}
+
+.button-filled {
+	@apply bg-action hover:bg-action-hover active:bg-action-pressed disabled:bg-disabled;
+}
+.button-filled svg path {
+	@apply fill-primary;
+}
+
+.button-tonal {
+	@apply bg-action-secondary hover:bg-action-secondary-hover active:bg-action-secondary-pressed disabled:bg-disabled;
+}
+.button-tonal svg path {
+	@apply fill-secondary;
+}
+
+button:disabled svg path {
+	@apply fill-disabled;
+}
+
+.button-text-filled svg path {
+	@apply fill-tertiary;
+}
+
+.checkbox-wrapper {
+	@apply rounded-xs bg-component-secondary w-[20px] h-[20px] border border-secondary bg-component-secondary cursor-pointer;
+}
+.checkbox-wrapper svg {
+	@apply pointer-events-none;
+}
+.checkbox-wrapper svg path {
+	@apply fill-primary;
+}
+
+.chip-wrapper {
+	@apply bg-[#f2f2f2] inline-flex items-center px-3 py-1 rounded-[50px] label-md !font-medium border hover:bg-component-hover relative;
+}
+.chip-wrapper svg path {
+	@apply fill-secondary;
+}
+.chip-wrapper[data-disabled="true"] svg path {
+	@apply fill-primary;
+}
+
+.multi-gradient {
+	background: conic-gradient(
+		from 180deg at 50% 50%,
+		#00438f 0deg,
+		#4da0ff 50.4deg,
+		#17a34a 108deg,
+		#ffbf38 165.6deg,
+		#c56a09 217.8deg,
+		#d92d20 282.6deg,
+		#00438f 360deg
+	);
+}
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.product-details {
+	@apply text-base;
+}
+.product-details ul {
+	@apply list-disc text-base pl-5;
+}
+.product-details ul li {
+	@apply py-1.5;
+}
+.embla__container {
+	touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+	transform: translate3d(0, 0, 0);
+	flex: 0 0 100%;
+	min-width: 0;
+}
+
+.search[data-state="checked"] span {
+	@apply hidden;
+}
+
+.heading-footer {
+	@apply text-[20px] leading-[28px] font-medium tracking-normal;
+}
+
+.slider-container .slick-dots {
+	@apply bottom-2;
+}
+
+.slider-container .slick-dots li button:before {
+	@apply text-[12px] text-white/50 opacity-100 rounded-full w-3 h-3 leading-[14px];
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+	@apply text-action-on-primary  opacity-100 shadow-[0_0_0_2px_white] rounded-full w-3 h-3 leading-[14px];
+}
+
+.arrow-button {
+	@apply flex items-center justify-center z-20 w-9 sm:w-12 h-9 sm:h-12 p-2 bg-white rounded-full absolute -translate-y-1/2  top-1/2 shadow-[0px_4px_4px_0px_#00000040];
+}
+
+.chip-color svg path {
+	@apply fill-none;
+}
+
+.accordion-multiple div {
+	@apply last:border-t-0 last:rounded-t-none first:rounded-b-none;
+}
+
+.product-details-tab div[role="tablist"] {
+	@apply border-b-[1px] border-black/20;
+}
+
+.product-details-tab button {
+	@apply border-0 border-b-[3px] rounded-none text-black/60 text-[13px] px-1 sm:text-base pb-5 sm:px-5 -mb-[2px];
+}
+
+.product-details-tab button[aria-selected="true"] {
+	@apply text-black border-0 shadow-none border-b-[3px] border-b-black;
+}
+
+.slider-products .arrow-button.arrow-right {
+	@apply right-1 sm:-right-4;
+}
+
+.slider-products .arrow-button.arrow-left {
+	@apply left-1 sm:-left-4;
+}
+
+/* .slider-products .slick-slide > div {
+	@apply px-2.5;
+}
+
+.slider-products .slick-list {
+	@apply -mx-2.5;
+} */
+
+.slider-products .slick-track .slick-slide {
+	@apply min-h-[400px] w-[295px];
+}
+
+.slider-product-images .slick-slider {
+	@apply h-[220px];
+}
+
+.slider-product-images .arrow-button {
+	@apply bg-transparent shadow-none opacity-0 group-hover:opacity-100;
+}
+
+.slider-product-images .arrow-button.arrow-left {
+	@apply left-0;
+}
+
+.slider-product-images .arrow-button.arrow-right {
+	@apply right-0;
+}
+
+.user-content-wrapper {
+	@apply shadow-[0px_4px_6px_-6px_rgba(0,_0,_0,_0.25)] border !border-black/15 rounded-sm p-4 sm:p-5 lg:p-8;
+}
+
+.toggleIcon {
+	@apply bg-transparent hover:!bg-transparent active:!bg-secondary w-[45px] rounded-none p-0 pb-[18px] border-[rgba(var(--brand-purple-500))] flex justify-center;
+}
